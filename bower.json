@@ -3,7 +3,8 @@
   "version": "0.2.20",
   "author": "Yoav Abrahami",
   "contributors": [
-    "Benjamin Orozco <benoror@gmail.com>"
+    "Benjamin Orozco <benoror@gmail.com>",
+    "Philippe Voinov <philippevoinov@gmail.com>"
   ],
   "main": [
     "./angular-tree-control.js",
