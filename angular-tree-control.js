@@ -263,8 +263,8 @@ if (typeof module !== "undefined" && typeof exports !== "undefined" && module.ex
                             '<ul {{options.ulClass}} >' +
                             '<li ng-repeat="node in node.{{options.nodeChildren}} | filter:filterExpression:filterComparator {{options.orderBy}}" ng-class="headClass(node)" {{options.liClass}}' +
                             'set-node-to-data>' +
-                            '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"></i>' +
-                            '<i class="tree-leaf-head {{options.iLeafClass}}"></i>' +
+                            '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"><span class="glyphicon" ng-class="{\'glyphicon-folder-open\': headClass(node) == \'tree-expanded\', \'glyphicon-folder-close\': headClass(node) != \'tree-expanded\'}"></span></i>' +
+                            '<i class="tree-leaf-head {{options.iLeafClass}}"><span class="glyphicon glyphicon-file"></span></i>' +
                             '<div class="tree-label {{options.labelClass}}" ng-class="[selectedClass(), unselectableClass()]" ng-click="selectNodeLabel(node)" tree-transclude></div>' +
                             '<treeitem ng-if="nodeExpanded()"></treeitem>' +
                             '</li>' +
