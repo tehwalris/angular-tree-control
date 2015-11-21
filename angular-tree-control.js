@@ -265,7 +265,7 @@ if (typeof module !== "undefined" && typeof exports !== "undefined" && module.ex
                             'set-node-to-data>' +
                             '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"><span class="glyphicon" ng-class="{\'glyphicon-folder-open\': headClass(node) == \'tree-expanded\', \'glyphicon-folder-close\': headClass(node) != \'tree-expanded\'}"></span></i>' +
                             '<i class="tree-leaf-head {{options.iLeafClass}}"><span class="glyphicon glyphicon-file"></span></i>' +
-                            '<div class="tree-label {{options.labelClass}}" ng-class="[selectedClass(), unselectableClass()]" ng-click="selectNodeLabel(node)" tree-transclude></div>' +
+                            '<div class="tree-label {{options.labelClass}}" ng-class="[selectedClass(), unselectableClass()]" ng-click="selectNodeLabel(node)" ng-dblclick="selectNodeHead(node)" tree-transclude></div>' +
                             '<treeitem ng-if="nodeExpanded()"></treeitem>' +
                             '</li>' +
                             '</ul>';
